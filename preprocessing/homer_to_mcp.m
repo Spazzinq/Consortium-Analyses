@@ -196,7 +196,7 @@ end
 if 2*std(diff(raw_nirs_file.t)) > 0.05*mean(diff(raw_nirs_file.t)),
     disp('WARNING: Sampling rate variability (2 sd) exceeds 5% of the mean.');
     disp(['Mean sampling period: ' mean(diff(raw_nirs_file.t)) ' sec']);
-    disp(['2 standard deviations: ' sd(diff(raw_nirs_file.t)) ' sec']);
+    disp(['2 standard deviations: ' std(diff(raw_nirs_file.t)) ' sec']);
 end
 
 
